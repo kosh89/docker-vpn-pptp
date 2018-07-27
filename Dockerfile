@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+MAINTAINER Sergey Vasilyev <kosh.goo@gmail.com>
 
 RUN apt update \
  && apt install -y pptpd iptables
