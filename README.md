@@ -1,10 +1,25 @@
-#Before build
+# PPTP VPN-server
+
+## Before build
+
 Enter username, server, password, ip address in etc/ppp/chap-secrets
-For example:
+
+### For example:
+
+```
+# Secrets for authentication using CHAP
+# client        server  secret                  IP addresses
 user1 pptpd pass%word *
+```
 
-#Build
+## Build
+
+```
 docker build -t vpn .
+```
 
-#Run
+## Run
+
+```
 docker run -d --name vpn_pptp --privileged -p 1723:1723 vpn
+```
