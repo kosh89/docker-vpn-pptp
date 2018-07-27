@@ -23,3 +23,4 @@ docker build -t vpn .
 ```
 docker run -d --name vpn_pptp --privileged -p 1723:1723 vpn
 ```
+You can add --restart=always parametr for restarting container after reboot
